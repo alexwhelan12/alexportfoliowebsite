@@ -14,27 +14,16 @@ const Hero = () => {
     const [scope, animate] = useAnimate();
 
     return (
-        <div>
-            <motion.div
-                initial={{opacity: 0}}
-                animate={{
-                    opacity: 1,
-                    transition: { delay:0, duration: 1, ease: 'easeInOut'}
-                }}
-            >
-                <Header />
-            </motion.div>
-            
+        <div className='flex items-center'>
             <div>
                 <Spotlight fill='orange' className='-top-40 -left-10'/>
                 <Spotlight fill='orange' className='top-10 left-full h-[80vh] w-[50vw]'/>
                 <Spotlight fill='white' className='top-28 left-80 h-[80vh] w-[50vw]'/>
             </div>
             
-            <div className='font-mono text-5xl text-left ml-96 mt-36 flex flex-col absolute'>
+            <div className='font-mono text-5xl text-left ml-[400px] mt-[520px] flex flex-col absolute'>
                 <span className='text-sm block'>Software Engineering Student</span>
-                <TextGenerateEffect words='Hello, I&apos;m' color='white'/>
-                {/* <p className='text-white mt-5'>Hello, I&apos;m</p> */}
+                <TextGenerateEffect words='Hello, I&apos;m' color='white'/>  
                 <TextGenerateEffect words='Alex Whelan' color="orange"/>
                 <motion.div 
                     className='w-96 h-20 mt-3 p-5 pl-0'
@@ -44,10 +33,10 @@ const Hero = () => {
                         transition: { delay:0, duration: 1, ease: 'easeInOut'}
                     }}
                 >
-                    <p className='text-sm mt-5 leading-5 text-white'>I&apos;m a third year software engineering student at the <span className='text-orange-600'>University of Calgary</span>. I have a big interest in <span className='text-orange-600'>fullstack development</span> and web-development in general.</p>    
+                    <p className='text-sm mt-5 leading-5 text-white'>I&apos;m a third year software engineering student at the <span className='text-orange-600'>University of Calgary</span>. I have a big interest in <span className='text-orange-600'>fullstack development</span> and web-development in general. I&apos;m currently looking for Software Engineering internships for May 2025.</p>    
                 </motion.div>
-                
-                <motion.a className='text-white bg-orange-600 mt-[70px] text-sm w-32 rounded-md p-2 flex flex-row gap-1 items-center' href='/'
+        
+                <motion.a className='text-white bg-orange-600 mt-[100px] text-sm w-32 rounded-md p-2 flex flex-row gap-1 items-center' href='/'
                     whileHover={{ scale: 1.1, 
                         transition: { duration: 0.2 }
                     }}
@@ -69,6 +58,11 @@ const Hero = () => {
                     className='bg-orange-600 rounded-full p-2 flex items-center justify-center w-12 h-12' 
                     whileHover={{ scale: 1.1 }} 
                     whileTap={{ scale: 0.9 }}
+                    initial={{opacity: 0}}
+                    animate={{
+                        opacity: 1,
+                        transition: { delay:0, duration: 1, ease: 'easeInOut'}
+                    }}
                     >
                         <svg role="img" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
                             <title>GitHub</title>
@@ -81,6 +75,11 @@ const Hero = () => {
                     className='bg-orange-600 rounded-full p-2 flex items-center justify-center w-12 h-12' 
                     whileHover={{ scale: 1.1 }} 
                     whileTap={{ scale: 0.9 }}
+                    initial={{opacity: 0}}
+                    animate={{
+                        opacity: 1,
+                        transition: { delay:0, duration: 1, ease: 'easeInOut'}
+                    }}
                     >
                         <svg role="img" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
                             <title>LinkedIn</title>
@@ -90,13 +89,15 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='relative ml-[850px] mt-[140px]'>
+            <div className='relative ml-[850px] mt-[150px]'>
                 <div className='relative'>
                     <motion.div
                         initial={{opacity: 0}}
                         animate={{
                             opacity: 1,
-                            transition: { delay:0, duration: 1, ease: 'easeInOut'}
+                            transition: { delay:0, duration: 0.7, ease: 'easeInOut'},
+                            textShadow: '0px 0px 10px #fffff',
+                            shadow: '0px 0px 10px #fffff'
                         }}
                         className='w-[298px] h-[298px] absolute'
                     >
