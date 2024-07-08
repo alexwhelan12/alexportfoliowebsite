@@ -13,10 +13,16 @@ function Header() {
           transition: { delay:0, duration: 1, ease: 'easeInOut'}
       }}
     >
-        <div className='header-nav-bar m-5 h-16 flex items-center'>
-            <a href="/" className='text-3xl text-white font-bold font-mono ml-10'>Alex<span className='text-orange-600 font-bold'>.</span></a>
+        <div className='header-nav-bar mt-5 h-16 flex items-center'>
+            <motion.a 
+              href="/" 
+              className='text-5xl text-white font-bold font-mono ml-10'
+              whileHover={{ scale: 1.1, 
+                transition: { duration: 0.2 }
+              }}
+            >Alex<span className='text-orange-600 font-bold'>.</span></motion.a>
             
-            <Link className='text-white ml-auto p-5 font-mono' href="/">
+            <Link className='text-white ml-auto p-5 font-mono text-xl' href="/">
               <motion.p 
                 whileHover={{ scale: 1.2, 
                               color: '#FFA500',
@@ -24,7 +30,7 @@ function Header() {
               >Home</motion.p>
             </Link>
             
-            <Link className='text-white p-5 font-mono'  href="/projects">
+            <Link className='text-white p-5 font-mono text-xl'  href="/projects">
               <motion.p 
                 whileHover={{ scale: 1.2, 
                   color: '#FFA500',
@@ -32,7 +38,7 @@ function Header() {
               >Projects</motion.p>
             </Link>
             
-            <Link className='text-white p-5 font-mono mr-10' href="/contact">
+            <Link className='text-white p-5 font-mono mr-10 text-xl' href="/contact">
               <motion.p 
                 whileHover={{ scale: 1.2, 
                   color: '#FFA500',
