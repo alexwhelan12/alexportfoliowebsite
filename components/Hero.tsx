@@ -6,8 +6,8 @@ import Image from 'next/image'
 import { motion, useAnimate } from 'framer-motion'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import { Spotlight } from './ui/Spotlight'
-import { IoCopyOutline } from 'react-icons/io5';
 import { BiDownload } from 'react-icons/bi';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
 
@@ -15,7 +15,7 @@ const Hero = () => {
 
     return (
         <div className='flex items-center justify-center'>
-            <div className=''>
+            <div>
                 <Spotlight fill='white' className='top-[6rem] left-80 h-[80vh] w-[50vw]'/>
                 <Spotlight fill='orange' className='-top-40 -left-10'/>
                 <Spotlight fill='orange' className='-top-40 -left-10'/>
@@ -33,7 +33,25 @@ const Hero = () => {
                 ><span className='text-base text-white'>Software Engineering Student</span></motion.div>
                 
                 <TextGenerateEffect words='Hello, I&apos;m' color='white'/>  
-                <TextGenerateEffect words='Alex Whelan' extraStyles='mb-3' color="orange"/>
+                <div className='text-orange-600 text-4xl z-10'>
+                    <TypeAnimation
+                        sequence={[
+                            // Same substring at the start will only be typed out once, initially
+                            'Alex Whelan',
+                            2000, // wait 1s before replacing "Mice" with "Hamsters"
+                            'Student',
+                            2000,
+                            'Web Developer',
+                            2000,
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        style={{ fontSize: '2em', display: 'inline-block', fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace', fontWeight: 'bold' }}
+                        repeat={Infinity}
+                        />
+                </div>
+                
+
                 <motion.div 
                     className='w-96 h-20 mt-3 p-5 pl-0'
                     initial={{opacity: 0}}
@@ -42,10 +60,10 @@ const Hero = () => {
                         transition: { delay:0, duration: 1, ease: 'easeInOut'}
                     }}
                 >
-                    <p className='text-base leading-5 text-white overflow-auto'>I&apos;m a third year software engineering student at the <span className='text-orange-600'>University of Calgary</span>. I have a big interest in <span className='text-orange-600'>fullstack development</span> and web-development in general. I&apos;m currently looking for Software Engineering internships for May 2025.</p>   
+                    <p className='text-base leading-5 text-white overflow-auto'>I&apos;m a third year software engineering student at the <span className='text-orange-600'>University of Calgary</span>. I have a big interest in <span className='text-orange-600'>fullstack development</span> and web-development in general. I&apos;m currently looking for Software Engineering internships for <span className='text-orange-600'>May 2025.</span></p>   
                 </motion.div>
         
-                <motion.a className='text-white text-base bg-orange-600 rounded-md p-2 flex flex-row gap-1 items-center w-fit mt-24' href='/'
+                <motion.a className='text-white text-base font-bold bg-orange-600 rounded-md p-2 flex flex-row gap-1 items-center w-fit mt-24' href='/'
                     whileHover={{ scale: 1.1, 
                         transition: { duration: 0.2 }
                     }}
