@@ -17,7 +17,7 @@ function Header() {
           transition: { delay:0, duration: 1, ease: 'easeInOut'}
       }}
     >
-        <div className='header-nav-bar mt-5 h-16 flex items-center'>
+        <div className='header-nav-bar mt-5 h-16 flex items-center mr-12'>
             <motion.a 
               href="/" 
               className='text-5xl text-white font-bold font-mono ml-10 z-10'

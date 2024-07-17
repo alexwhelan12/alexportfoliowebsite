@@ -16,14 +16,14 @@ const Hero = () => {
     return (
         <div className='flex items-center justify-center'>
             <div>
-                <Spotlight fill='white' className='top-[6rem] left-80 h-[80vh] w-[50vw]'/>
-                <Spotlight fill='orange' className='-top-40 -left-10'/>
-                <Spotlight fill='orange' className='-top-40 -left-10'/>
-                <Spotlight fill='orange' className='top-32 left-full h-[80vh] w-[50vw]'/>
+                <Spotlight fill='white' className='top-[6rem] left-80 h-[80vh] w-[50vw] xl:left-20'/>
+                <Spotlight fill='orange' className='-top-40 -left-10 xl:-left-40'/>
+                <Spotlight fill='orange' className='-top-40 -left-10 xl:-left-40'/>
+                {/* <Spotlight fill='orange' className='top-32 left-full h-[80vh] w-[50vw]'/> */}
                 {/* <Spotlight fill='orange' className='top-32 right-10 h-[80vh] w-[50vw]'/> */}
             </div>
             
-            <div className='font-mono text-5xl flex flex-col justify-center items-left absolute top-60 left-[30rem]'>
+            <div className='font-mono text-5xl flex flex-col justify-center items-left absolute top-60 left-[30rem] 2xl:top-50 2xl:left-[27rem] xl:left-[10rem]'>
                 <motion.div className='mt-0'
                     initial={{opacity: 0}}
                     animate={{
@@ -60,7 +60,7 @@ const Hero = () => {
                         transition: { delay:0, duration: 1, ease: 'easeInOut'}
                     }}
                 >
-                    <p className='text-base leading-5 text-white overflow-auto'>I&apos;m a third year software engineering student at the <span className='text-orange-600'>University of Calgary</span>. I have a big interest in <span className='text-orange-600'>fullstack development</span> and web-development in general. I&apos;m currently looking for Software Engineering internships for <span className='text-orange-600'>May 2025.</span></p>   
+                    <p className='text-base leading-5 text-white overflow-auto'>I&apos;m a third year software engineering student at the <span className='text-orange-600 hover:text-orange-400'><a target='_blank' href='https://www.ucalgary.ca/'>University of Calgary</a></span>. I have a big interest in <span className='text-orange-600'>fullstack development</span> and web-development in general. I&apos;m currently looking for Software Engineering internships for <span className='text-orange-600'>May 2025.</span></p>   
                 </motion.div>
         
                 <motion.a className='text-white text-base font-bold bg-orange-600 rounded-md p-2 flex flex-row gap-1 items-center w-fit mt-24' href='/'
@@ -130,12 +130,12 @@ const Hero = () => {
                         alt="portfolio-photo"
                         width={500}
                         height={500}
-                        className='rounded-full w-80 absolute top-[17.5rem] right-[32.5rem]'
+                        className='rounded-full w-80 absolute top-[17.5rem] right-[32.5rem] 2xl:right-[32rem] xl:right-[12.5rem]'
                     />
                     </motion.div>
 
                     <motion.svg
-                        className="w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] absolute top-60 right-[30rem]"
+                        className="w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] absolute top-60 right-[30rem] 2xl:right-[29.5rem] xl:right-[10rem]"
                         fill="transparent"
                         viewBox={`0 0 506 506`}
                         xmlns="http://www.w3.org/2000/svg"
@@ -147,11 +147,7 @@ const Hero = () => {
                             stroke="#EA580C"
                             strokeWidth="8"
                             strokeLinejoin="round"
-                            initial={{
-                                opacity: 0,
-                            }}
                             animate={{
-                                opacity: 1,
                                 strokeDasharray: ["15 120 25 2", "16 25 92 72", "4 250 22 22"],
                                 rotate: [120, 360],
                             }}

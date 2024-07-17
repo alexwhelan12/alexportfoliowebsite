@@ -39,7 +39,7 @@ function ContactPage() {
     <>
       <Header/>
       {/* <Globe /> */}
-      <div className='flex items-center justify-center'>
+      <div className='absolute top-[8rem] left-[20rem]'>
         <div className="contactsBody bg-gradient-to-r from-orange-600 to-blue-500 p-5 flex items-center justify-center w-[50rem] rounded-xl mt-10">
           <section className='contact-page flex items-center justify-center mt-16'>
             <div className="contact-form flex flex-col items-center justify-center text-white">
