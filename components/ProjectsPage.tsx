@@ -17,7 +17,7 @@ function ProjectsPage() {
   return (
     <section>
       <Header />
-      <motion.div className='grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-[90rem] w-full h-full absolute top-[10rem] left-[15rem]'
+      <motion.div className='grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-[90rem] w-full h-full absolute top-[10rem] left-[15rem] lg:w-[80rem] lg:left-[7.5rem]'
         initial={{opacity: 0}}
         animate={{
             opacity: 1,
@@ -37,13 +37,13 @@ function ProjectsPage() {
                   <AnimatedTooltip items={project.techStack || [] } />
                 </div>
               </div>
-              {/* <Image
-                src="/linear.webp"
+              <Image
+                src={project.image}
                 width={500}
                 height={500}
                 alt="linear demo image"
-                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-              /> */}
+                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl -z-10"
+              />
           </WobbleCard>
         ))}
       </motion.div>

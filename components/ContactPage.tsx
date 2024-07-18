@@ -40,14 +40,14 @@ function ContactPage() {
     <>
       <Header/>
       <GlobeDemo/>
-      <motion.div className='absolute top-[8rem] left-[25rem] z-10'
+      <motion.div className='absolute top-[8rem] xl:left-[15rem] z-10 2xl:left-[25rem]'
         initial={{opacity: 0}}
         animate={{
             opacity: 1,
             transition: { delay:0, duration: 1.2, ease: 'easeInOut'}
         }}
       >
-        <div className="contactsBody bg-gradient-to-r from-orange-600 to-blue-900 p-5 flex items-center justify-center w-[50rem] rounded-xl mt-10 shadow-md shadow-zinc-400 shadow-">
+        <div className="contactsBody[background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] p-5 flex items-center justify-center w-[50rem] rounded-xl mt-10 border-orange-600 border">
           <section className='contact-page flex items-center justify-center mt-16'>
             <div className="contact-form flex flex-col items-center justify-center text-white">
               <h2 className='font-mono text-4xl p-5 text-white'>Contact Me</h2>

@@ -21,7 +21,7 @@ const Hero = () => {
                 {/* <Spotlight fill='orange' className='top-32 right-10 h-[80vh] w-[50vw]'/> */}
             </div>
             
-            <div className='font-mono text-5xl flex flex-col justify-center items-left absolute top-60 left-[30rem] 2xl:top-50 2xl:left-[27rem] xl:left-[10rem]'>
+            <div className='font-mono text-5xl flex flex-col justify-center items-left absolute top-60 left-[30rem] 2xl:top-50 2xl:left-[27rem] xl:left-[12.5rem]'>
                 <motion.div className='mt-0'
                     initial={{opacity: 0}}
                     animate={{
@@ -113,7 +113,7 @@ const Hero = () => {
                     </motion.a>
                 </div>
             </div>
-                    {/* <motion.div
+                    <motion.div
                         initial={{opacity: 0}}
                         animate={{
                             opacity: 1,
@@ -128,12 +128,12 @@ const Hero = () => {
                         alt="portfolio-photo"
                         width={500}
                         height={500}
-                        className='rounded-full w-80 absolute top-[17.5rem] right-[32.5rem] 2xl:right-[32rem] xl:right-[12.5rem]'
+                        className='rounded-full w-80 absolute top-[17.5rem] right-[32.5rem] 2xl:right-[32rem] xl:right-[15rem]'
                     />
                     </motion.div>
 
                     <motion.svg
-                        className="w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] absolute top-60 right-[30rem] 2xl:right-[29.5rem] xl:right-[10rem]"
+                        className="w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] absolute top-60 right-[30rem] 2xl:right-[29.5rem] xl:right-[12.5rem]"
                         fill="transparent"
                         viewBox={`0 0 506 506`}
                         xmlns="http://www.w3.org/2000/svg"
@@ -155,9 +155,7 @@ const Hero = () => {
                                 repeatType: "reverse",
                             }}
                         />
-                    </motion.svg> */}
-
-                    {/* ADD in accenturnity UI globe to background!!! */}
+                    </motion.svg>
         </div>
     )
 }
