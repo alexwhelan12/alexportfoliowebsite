@@ -4,7 +4,8 @@ import React from 'react'
 import Header from './Header'
 import { useState, useEffect } from 'react'
 import motion from 'framer-motion'
-import { Globe } from './ui/globe';
+import { GlobeDemo } from './ui/GridGlobe'
+
 
 function ContactPage() {
 
@@ -38,9 +39,9 @@ function ContactPage() {
    
     <>
       <Header/>
-      {/* <Globe /> */}
-      <div className='absolute top-[8rem] left-[20rem]'>
-        <div className="contactsBody bg-gradient-to-r from-orange-600 to-blue-500 p-5 flex items-center justify-center w-[50rem] rounded-xl mt-10">
+      <GlobeDemo/>
+      <div className='absolute top-[8rem] left-[25rem] z-10'>
+        <div className="contactsBody bg-gradient-to-r from-orange-600 to-blue-900 p-5 flex items-center justify-center w-[50rem] rounded-xl mt-10 shadow-md shadow-zinc-400 shadow-">
           <section className='contact-page flex items-center justify-center mt-16'>
             <div className="contact-form flex flex-col items-center justify-center text-white">
               <h2 className='font-mono text-4xl p-5 text-white'>Contact Me</h2>

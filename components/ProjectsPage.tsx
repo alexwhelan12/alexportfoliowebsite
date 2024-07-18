@@ -21,10 +21,10 @@ function ProjectsPage() {
         {projects.map((project, index) => (
           <WobbleCard key={index} className="m-5 p-5">
               <div className="max-w-xs">
-                <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                <h2 className="text-left text-balance text-base md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-white font-mono">
                   {project.title}
                 </h2>
-                <p className="mt-4 text-left  text-base/6 text-neutral-200">
+                <p className="mt-4 text-left  text-base/6 text-neutral-200 font-mono">
                   {project.description}
                 </p>
                 <div className='flex flex-row gap-5 mt-3'>
