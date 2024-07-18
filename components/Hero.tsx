@@ -44,7 +44,7 @@ const Hero = () => {
                         ]}
                         wrapper="span"
                         speed={50}
-                        style={{ fontSize: '2em', display: 'inline-block', fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace', fontWeight: 'bold' }}
+                        style={{ fontSize: '2em', display: 'inline-block', fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace', fontWeight: 'bold', marginTop: '0.7rem'}}
                         repeat={Infinity}
                         />
                 </div>
@@ -113,7 +113,7 @@ const Hero = () => {
                     </motion.a>
                 </div>
             </div>
-                    <motion.div
+                    {/* <motion.div
                         initial={{opacity: 0}}
                         animate={{
                             opacity: 1,
@@ -155,7 +155,7 @@ const Hero = () => {
                                 repeatType: "reverse",
                             }}
                         />
-                    </motion.svg>
+                    </motion.svg> */}
 
                     {/* ADD in accenturnity UI globe to background!!! */}
         </div>
