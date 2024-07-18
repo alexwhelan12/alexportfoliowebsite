@@ -37,9 +37,9 @@ const Hero = () => {
                             // Same substring at the start will only be typed out once, initially
                             'Alex Whelan',
                             2000, // wait 1s before replacing "Mice" with "Hamsters"
-                            'Student',
+                            'a Student',
                             2000,
-                            'Web Developer',
+                            'a Web Developer',
                             2000,
                         ]}
                         wrapper="span"
