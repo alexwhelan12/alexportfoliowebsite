@@ -3,7 +3,7 @@
 import React from 'react'
 import Header from './Header'
 import { useState, useEffect } from 'react'
-import motion from 'framer-motion'
+import { motion } from 'framer-motion'
 import { GlobeDemo } from './ui/GridGlobe'
 
 
@@ -40,7 +40,13 @@ function ContactPage() {
     <>
       <Header/>
       <GlobeDemo/>
-      <div className='absolute top-[8rem] left-[25rem] z-10'>
+      <motion.div className='absolute top-[8rem] left-[25rem] z-10'
+        initial={{opacity: 0}}
+        animate={{
+            opacity: 1,
+            transition: { delay:0, duration: 1.2, ease: 'easeInOut'}
+        }}
+      >
         <div className="contactsBody bg-gradient-to-r from-orange-600 to-blue-900 p-5 flex items-center justify-center w-[50rem] rounded-xl mt-10 shadow-md shadow-zinc-400 shadow-">
           <section className='contact-page flex items-center justify-center mt-16'>
             <div className="contact-form flex flex-col items-center justify-center text-white">
@@ -62,7 +68,7 @@ function ContactPage() {
             </div>
           </section>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

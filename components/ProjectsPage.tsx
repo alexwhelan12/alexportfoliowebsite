@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'; // Import useState from 'react'
 import Header from './Header';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import projects from '@/app/data/projects';
 import { WobbleCard } from './ui/wobble-card';
@@ -17,7 +17,13 @@ function ProjectsPage() {
   return (
     <section>
       <Header />
-      <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-[90rem] w-full h-full absolute top-[10rem] left-[15rem]'>
+      <motion.div className='grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-[90rem] w-full h-full absolute top-[10rem] left-[15rem]'
+        initial={{opacity: 0}}
+        animate={{
+            opacity: 1,
+            transition: { delay:0, duration: 0.8, ease: 'easeInOut'}
+        }}
+      >
         {projects.map((project, index) => (
           <WobbleCard key={index} className="m-5 p-5">
               <div className="max-w-xs">
@@ -40,7 +46,7 @@ function ProjectsPage() {
               /> */}
           </WobbleCard>
         ))}
-      </div>
+      </motion.div>
     </section>
   )
 }

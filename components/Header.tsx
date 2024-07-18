@@ -11,11 +11,11 @@ function Header() {
 
   return (
     <motion.div className="bg-black"
-      initial={{opacity: 0}}
-      animate={{
-          opacity: 1,
-          transition: { delay:0, duration: 1, ease: 'easeInOut'}
-      }}
+      // initial={{opacity: 0}}
+      // animate={{
+      //     opacity: 1,
+      //     transition: { delay:0, duration: 1, ease: 'easeInOut'}
+      // }}
     >
         <div className='header-nav-bar mt-5 h-16 flex items-center mr-12'>
             <motion.a 
