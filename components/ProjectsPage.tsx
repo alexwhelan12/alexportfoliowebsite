@@ -51,7 +51,6 @@ function ProjectsPage() {
                 alt="linear demo image"
                 className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl -z-10"
               />
-              
           </WobbleCard>
         ))}
       </motion.div>
