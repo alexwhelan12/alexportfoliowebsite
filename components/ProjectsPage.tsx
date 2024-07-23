@@ -19,7 +19,7 @@ function ProjectsPage() {
     <section>
       <Header />
       <motion.div
-    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 max-w-[90rem] w-full absolute top-[10rem] left-[15rem] xl:w-[80rem] lg:left-[7.5rem] md:left-5 md:w-[45rem] md:m-1"
+    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 max-w-[90rem] w-full absolute top-[10rem] left-[15rem] xl:w-[80rem] lg:left-[7.5rem] md:left-5 md:w-[45rem] md:m-1 sm:w-[30rem] sm:left-[5.5rem]"
     initial={{ opacity: 0 }}
     animate={{
       opacity: 1,
@@ -40,8 +40,8 @@ function ProjectsPage() {
             {project.description}
           </p>
         </div>
-        <div className={`flex flex-row gap-5 mt-3 md:absolute md:top-[13rem] 
-          ${index === 0 ?"xl:top-[19.5rem]" : "xl:top-[18rem]" }`}
+        <div className={`flex flex-row gap-5 mt-3 absolute md:top-[13rem] 
+          ${index === 0 ?"xl:top-[19.5rem]" : "xl:top-[18rem]" } sm:top-[8rem] sm:left-[2rem]`}
           
           >
           <AnimatedTooltip items={project.techStack || []}/>
@@ -49,7 +49,8 @@ function ProjectsPage() {
       </div>
       {project.link && (
         <motion.a
-          className="text-white z-10 absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#062056] p-2 rounded-lg font-mono md:left-20 md:bottom-[4.5rem] xl:bottom-[1rem]"
+          className="text-white z-10 absolute bottom-5 left-1/2 transform -translate-x-1/2 
+          bg-[#062056] p-2 rounded-lg font-mono md:left-20 md:bottom-[4.5rem] xl:bottom-[1rem] sm:left-[4.5rem] sm:bottom-[17rem]"
           href={project.link}
           target="_blank"
           rel="noreferrer"
@@ -66,7 +67,7 @@ function ProjectsPage() {
         width={500}
         height={500}
         alt="linear demo image"
-        className="absolute -right-4 lg:-right-[40%] md:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl -z-10 md:opacity-85"
+        className={`absolute -right-4 lg:-right-[40%] md:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl -z-10 md:opacity-85 sm:-right-[20%] sm:-bottom-[1.5rem] ${index === 1 ? "sm:-bottom-[5.5rem] sm:-right-[8rem]" : ""}`}
       />
     </WobbleCard>
   ))}
