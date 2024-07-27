@@ -19,13 +19,12 @@ function ProjectsPage() {
     <section>
       <Header />
       <motion.div
-    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 max-w-[90rem] w-full absolute top-[10rem] left-[15rem] xl:w-[80rem] lg:left-[7.5rem] md:left-5 md:w-[45rem] md:m-1 sm:w-[30rem] sm:left-[5.5rem]"
-    initial={{ opacity: 0 }}
-    animate={{
-      opacity: 1,
-      transition: { delay: 0, duration: 0.8, ease: 'easeInOut' },
-  }}
->
+      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 max-w-[90rem] w-full absolute top-[10rem] left-[15rem] xl:w-[80rem] lg:left-[7.5rem] md:left-5 md:w-[45rem] md:m-1 sm:w-[30rem]"
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 0, duration: 0.8, ease: 'easeInOut' },
+      }}>
   {projects.map((project, index) => (
     <WobbleCard
       key={index}
