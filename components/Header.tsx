@@ -26,7 +26,7 @@ function Header() {
               }}
             >Alex<span className='text-orange-600 font-bold z-10'>.</span></motion.a>
             
-            <Link className={`p-5 font-mono text-xl ml-auto z-10 ${currentPath === "/" ? "text-orange-600" : "text-white"}`} href="/">
+            <Link className={`p-5 font-mono text-xl ml-auto lg:ml-auto xl:ml-auto md:ml-24 z-10 ${currentPath === "/" ? "text-orange-600" : "text-white"}`} href="/">
               <motion.p 
                 whileHover={{ scale: 1.2, 
                               color: '#fdba74',

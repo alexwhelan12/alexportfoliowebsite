@@ -19,7 +19,7 @@ function ProjectsPage() {
     <section>
       <Header />
       <motion.div
-      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 max-w-[90rem] w-full absolute top-[10rem] left-[15rem] xl:w-[80rem] lg:left-[7.5rem] md:left-5 md:w-[45rem] md:m-1 sm:w-[30rem] sm:left-[5rem]"
+      className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-[90rem] w-full absolute top-[10rem] left-[15rem] xl:w-[80rem] xl:left-[7rem] lg:w-[60rem] lg:left-[5.75rem] md:w-[35rem] md:m-1 md:left-[2.25rem] sm:w-[30rem] sm:left-[5rem]"
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
@@ -48,8 +48,7 @@ function ProjectsPage() {
       </div>
       {project.link && (
         <motion.a
-          className="text-white z-10 absolute bottom-5 left-1/2 transform -translate-x-1/2 
-          bg-[#062056] p-2 rounded-lg font-mono md:left-20 md:bottom-[4.5rem] xl:bottom-[1rem] sm:left-[4.5rem] sm:bottom-[17rem]"
+          className="text-white z-10 absolute bottom-5 bg-[#062056] p-2 rounded-lg font-mono md:bottom-[4.5rem] xl:bottom-[1rem] xl:left-8 sm:left-8 sm:bottom-[17rem]"
           href={project.link}
           target="_blank"
           rel="noreferrer"
