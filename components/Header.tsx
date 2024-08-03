@@ -20,13 +20,13 @@ function Header() {
         <div className='header-nav-bar mt-5 h-16 flex items-center mr-12'>
             <motion.a 
               href="/" 
-              className='text-5xl text-white font-bold font-mono ml-10 z-10'
+              className='text-3xl text-white font-bold font-mono ml-8 md:ml-10 z-10 md:text-5xl lg:text-5xl'
               whileHover={{ scale: 1.1, 
                 transition: { duration: 0.2 }
               }}
             >Alex<span className='text-orange-600 font-bold z-10'>.</span></motion.a>
             
-            <Link className={`p-5 font-mono text-xl ml-auto lg:ml-auto xl:ml-auto md:ml-24 z-10 ${currentPath === "/" ? "text-orange-600" : "text-white"}`} href="/">
+            <Link className={`p-3 font-mono text-md ml-7 lg:ml-auto xl:ml-auto md:ml-24 z-10 md:text-lg ${currentPath === "/" ? "text-orange-600" : "text-white"}`} href="/">
               <motion.p 
                 whileHover={{ scale: 1.2, 
                               color: '#fdba74',
@@ -34,7 +34,7 @@ function Header() {
               >Home</motion.p>
             </Link>
             
-            <Link className={`p-5 font-mono text-xl z-10 ${currentPath === "/projects" ? "text-orange-600" : "text-white"}`} href="/projects">
+            <Link className={`p-3 font-mono text-md z-10 md:text-lg ${currentPath === "/projects" ? "text-orange-600" : "text-white"}`} href="/projects">
               <motion.p 
                 whileHover={{ scale: 1.2, 
                   color: '#fdba74',
@@ -42,7 +42,7 @@ function Header() {
               >Projects</motion.p>
             </Link>
             
-            <Link className={`p-5 font-mono text-xl z-10 ${currentPath === "/contact" ? "text-orange-600" : "text-white"}`} href="/contact">
+            <Link className={`p-3 font-mono text-md z-10 md:text-lg ${currentPath === "/contact" ? "text-orange-600" : "text-white"}`} href="/contact">
               <motion.p 
                 whileHover={{ scale: 1.2, 
                   color: '#fdba74',

@@ -13,24 +13,24 @@ const Hero = () => {
     return (
         <div className='flex items-center justify-center'>
             <div>
-                <Spotlight fill='white' className='top-0 left-80 h-[80vh] w-[50vw] xl:left-20'/>
-                <Spotlight fill='orange' className='-top-40 -left-10 xl:-left-40'/>
-                <Spotlight fill='orange' className='-top-40 -left-10 xl:-left-40'/>
+                <Spotlight fill='white' className='top-0 left-80 h-[80vh] w-[50vw] xl:left-20 hidden md:block md:top-8'/>
+                <Spotlight fill='orange' className='-top-40 -left-10 xl:-left-40 hidden md:block'/>
+                <Spotlight fill='orange' className='-top-40 -left-10 xl:-left-40 hidden md:block md:-top-4'/>
                 {/* <Spotlight fill='orange' className='top-32 left-full h-[80vh] w-[50vw]'/> */}
                 {/* <Spotlight fill='orange' className='top-32 right-10 h-[80vh] w-[50vw]'/> */}
             </div>
             
-            <div className='font-mono text-5xl flex flex-col justify-center items-left absolute top-60 left-[30rem] 2xl:top-50 2xl:left-[27rem] xl:left-[12.5rem]'>
+            <div className='font-mono text-5xl flex flex-col justify-center items-left absolute top-[25rem] left-6 md:top-60 md:left-[30rem] 2xl:top-50 2xl:left-[24rem] xl:left-[12.5rem]'>
                 <motion.div className='mt-0'
                     initial={{opacity: 0}}
                     animate={{
                         opacity: 1,
                         transition: { delay:0, duration: 1, ease: 'easeInOut'}
                     }}
-                ><span className='text-base text-white'>Software Engineering Student</span></motion.div>
+                ><span className='text-sm md:text-base text-white'>Software Engineering Student</span></motion.div>
                 
                 <TextGenerateEffect words='Hello, I&apos;m' color='white'/>  
-                <div className='text-orange-600 text-4xl z-10'>
+                <div className='text-orange-600 text-xl md:text-3xl xl:text-3xl 2xl:text-4xl z-10'>
                     <TypeAnimation
                         sequence={[
                             // Same substring at the start will only be typed out once, initially
@@ -57,10 +57,10 @@ const Hero = () => {
                         transition: { delay:0, duration: 1, ease: 'easeInOut'}
                     }}
                 >
-                    <p className='text-base leading-5 text-white overflow-auto'>I&apos;m a third year software engineering student at the <span className='text-orange-600 hover:text-orange-400'><a target='_blank' href='https://www.ucalgary.ca/'>University of Calgary</a></span>. I have a big interest in <span className='text-orange-600'>fullstack development</span> and web-development in general. I&apos;m currently looking for Software Engineering internships for <span className='text-orange-600'>May 2025.</span></p>   
+                    <p className='text-sm md:text-base leading-5 text-white overflow-auto'>I&apos;m a third year software engineering student at the <span className='text-orange-600 hover:text-orange-400'><a target='_blank' href='https://www.ucalgary.ca/'>University of Calgary</a></span>. I have a big interest in <span className='text-orange-600'>fullstack development</span> and web-development in general. I&apos;m currently looking for Software Engineering internships for <span className='text-orange-600'>May 2025.</span></p>   
                 </motion.div>
         
-                <motion.a className='text-white text-base font-bold bg-orange-600 rounded-md p-2 flex flex-row gap-1 items-center w-fit mt-24' href='/'
+                <motion.a className='text-white text-base font-bold bg-orange-600 rounded-md p-2 flex flex-row gap-1 items-center w-fit mt-24 ml-5 md:ml-0 md:mt-32' href='/'
                     whileHover={{ scale: 1.1, 
                         transition: { duration: 0.2 }
                     }}
@@ -75,7 +75,7 @@ const Hero = () => {
                 <BiDownload />
                 </motion.a>
 
-                <div className='flex items-center space-x-4 ml-40 mt-[-42px]'>
+                <div className='flex items-center space-x-4 ml-48 md:ml-40 mt-[-42px]'>
                     <motion.a 
                     href="https://github.com/alexwhelan12" 
                     target='_blank'
@@ -112,7 +112,7 @@ const Hero = () => {
                     </motion.a>
                 </div>
             </div>
-                    <motion.div
+            <motion.div
                         initial={{opacity: 0}}
                         animate={{
                             opacity: 1,
@@ -127,12 +127,12 @@ const Hero = () => {
                         alt="portfolio-photo"
                         width={500}
                         height={500}
-                        className='rounded-full w-80 absolute top-[17.5rem] right-[32.5rem] 2xl:right-[32rem] xl:right-[15rem]'
+                        className='rounded-full md:w-80 w-[15rem] absolute top-[8rem] right-[4.5rem] md:top-[17.5rem]  md:right-[32.5rem] 2xl:right-[32rem] xl:right-[15rem]'
                     />
                     </motion.div>
 
                     <motion.svg
-                        className="w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] absolute top-60 right-[30rem] 2xl:right-[29.5rem] xl:right-[12.5rem]"
+                        className="top-[6rem] right-[2.6rem] w-[300px] md:w-[300px] md:h-[300px] xl:w-[400px] xl:h-[400px] absolute md:top-60 md:right-[30rem] 2xl:right-[29.5rem] xl:right-[12.5rem]"
                         fill="transparent"
                         viewBox={`0 0 506 506`}
                         xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +155,7 @@ const Hero = () => {
                             }}
                         />
                     </motion.svg>
-        </div>
+    </div>
     )
 }
 
