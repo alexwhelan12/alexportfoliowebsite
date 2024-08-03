@@ -15,7 +15,7 @@ const Hero = () => {
             <div>
                 <Spotlight fill='white' className='top-0 left-80 h-[80vh] w-[50vw] xl:left-20 hidden md:block md:top-8'/>
                 <Spotlight fill='orange' className='-top-40 -left-10 xl:-left-40 hidden md:block'/>
-                <Spotlight fill='orange' className='-top-40 -left-10 xl:-left-40 hidden md:block md:-top-4'/>
+                <Spotlight fill='orange' className='-top-40 -left-10 xl:-left-40 hidden md:block md:-top-30'/>
                 {/* <Spotlight fill='orange' className='top-32 left-full h-[80vh] w-[50vw]'/> */}
                 {/* <Spotlight fill='orange' className='top-32 right-10 h-[80vh] w-[50vw]'/> */}
             </div>
