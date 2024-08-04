@@ -20,7 +20,7 @@ const Hero = () => {
                 {/* <Spotlight fill='orange' className='top-32 right-10 h-[80vh] w-[50vw]'/> */}
             </div>
             
-            <div className='font-mono text-5xl flex flex-col justify-center items-left absolute top-[25rem] left-6 md:top-60 md:left-[30rem] 2xl:top-50 2xl:left-[24rem] xl:left-[12.5rem]'>
+            <div className='font-mono text-5xl flex flex-col justify-center items-left absolute top-[25rem] left-6 md:top-60 md:left-[30rem] 2xl:top-50 2xl:left-[24rem] xl:left-[12.5rem] xl:top-[13rem]'>
                 <motion.div className='mt-0'
                     initial={{opacity: 0}}
                     animate={{

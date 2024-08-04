@@ -4,7 +4,7 @@ import { link } from "fs";
 
 const projects = [{
     title: "Solar Car Helios Telemetry Dashboard",
-    description: "With over 100,000 mothly active bot users, Gippity AI is the most popular AI platform for developers.",
+    description: "Helios Telemetry Dashboard, a web application that displays real-time telemetry data from the solar car Helios.",
     image: "/images/Helios-telemetry.gif",
     link: "https://telemetry-beta.calgarysolarcar.ca/",
     techStack: [{id:1, name: "Tailwind CSS", designation: "Styling", image:"/images/tailwind-svgrepo-com.svg"},
@@ -13,37 +13,37 @@ const projects = [{
 },
 {
     title: "Handheld Video Game Console",
-    description: "With over 100,000 mothly active bot users, Gippity AI is the most popular AI platform for developers.",
+    description: "Handheld Video Game Console, a portable gaming device that allows users to play games on the go.",
     image: "/images/HandheldVideoGameConsole.png",
     link: undefined,
     techStack: [{id:1, name: "C language", designation: "Arduino", image:"/images/c.svg"}]
 },
 {
     title: "Automated, Self Sustaining Garden",
-    description: "With over 100,000 mothly active bot users, Gippity AI is the most popular AI platform for developers.",
+    description: "A project that uses an Arduino to automate the process of watering plants and generating light.",
     image: "/images/SelfSustainingGarden.png",
     link: undefined,
     techStack: [{id:1, name: "C language", designation: "Arduino", image:"/images/c.svg"},]
 },
 {
     title: "Disaster Relief Program",
-    description: "With over 100,000 mothly active bot users, Gippity AI is the most popular AI platform for developers.",
-    image: "/linear.webp",
+    description: "A simple Java program that simulates a disaster relief program using Object Oriented Programming principles.",
+    image: undefined,
     link: undefined,
     techStack: [{id:1, name: "Java", designation: "OOP", image:"/images/java.svg"},
         {id:2, name: "PostgreSQL", designation: "Database", image:"/images/postgresql.svg"},]
 },
 {
     title: "Flight Information Interface",
-    description: "With over 100,000 mothly active bot users, Gippity AI is the most popular AI platform for developers.",
-    image: "/linear.webp",
+    description: "A C++ program that simulates a flight information interface using Object Oriented Programming principles.",
+    image: undefined,
     link: undefined,
     techStack: [{id:1, name: "C++", designation: "Logic", image:"/images/cpp.svg"}]
 },
 {
     title: "More Projects Coming Soon...",
-    description: "With over 100,000 mothly active bot users, Gippity AI is the most popular AI platform for developers.",
-    image: "/linear.webp",
+    description: "Stay tuned for more projects!",
+    image: undefined,
     link: undefined,
     techStack: [],
 }];
