@@ -48,7 +48,7 @@ function ProjectsPage() {
       </div>
       {project.link && (
         <motion.a
-          className={`${index === 0 ? "xl:-bottom-[0.1rem] xl:left-[14rem]" : ""} text-white z-10 absolute bottom-5 bg-[#062056] p-2 rounded-lg font-mono md:bottom-[4.5rem] xl:bottom-[1rem] xl:left-8 sm:left-8 sm:bottom-[17rem]`}
+          className={`${index === 0 ? "xl:bottom-[0rem] xl:left-[14rem]" : "xl:bottom-[1rem]"} text-white z-10 absolute bottom-5 bg-[#062056] p-2 rounded-lg font-mono md:bottom-[4.5rem] xl:left-8 sm:left-8 sm:bottom-[17rem]`}
           href={project.link}
           target="_blank"
           rel="noreferrer"
