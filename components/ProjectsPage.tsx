@@ -13,13 +13,11 @@ import Link from 'next/link';
 
 
 function ProjectsPage() {
-
-
   return (
     <section>
       <Header />
       <motion.div
-      className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-[90rem] w-full absolute top-[10rem] left-[15rem] xl:w-[80rem] xl:left-[7rem] lg:w-[60rem] lg:left-[5.75rem] md:w-[35rem] md:m-1 md:left-[2.25rem] sm:w-[30rem] sm:left-[5rem] 2xl:left-[14.5rem] 2xl:w-[100rem]"
+      className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-[90rem] w-full absolute top-[10rem] left-[15rem] xl:w-[80rem] xl:left-[7rem] lg:w-[60rem] lg:left-[5.75rem] md:w-[35rem] md:m-1 md:left-[5.25rem] sm:w-[30rem] sm:left-[5rem] 2xl:left-[14.5rem] 2xl:w-[100rem]"
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
@@ -39,7 +37,7 @@ function ProjectsPage() {
             {project.description}
           </p>
         </div>
-        <div className={`flex flex-row gap-5 mt-3 absolute md:top-[13rem] 
+        <div className={`flex flex-row gap-5 mt-3 absolute md:top-[15rem] 
           ${index === 0 ?"xl:top-[21rem] xl:left-[2rem]" : index === 2 ? "xl:top-[20rem]": "xl:top-[19rem]" } sm:top-[8rem] sm:left-[2rem]`}
           
           >
@@ -48,7 +46,7 @@ function ProjectsPage() {
       </div>
       {project.link && (
         <motion.a
-          className={`${index === 0 ? "xl:bottom-[0rem] xl:left-[14rem]" : "xl:bottom-[1rem]"} text-white z-10 absolute bottom-5 bg-[#062056] p-2 rounded-lg font-mono md:bottom-[4.5rem] xl:left-8 sm:left-8 sm:bottom-[17rem]`}
+          className={`${index === 0 ? "xl:bottom-[0rem] xl:left-[14rem]" : "xl:bottom-[1rem]"} text-white z-10 absolute bottom-5 bg-[#062056] p-2 rounded-lg font-mono md:bottom-[2.5rem] xl:left-8 sm:left-8 sm:bottom-[17rem]`}
           href={project.link}
           target="_blank"
           rel="noreferrer"
