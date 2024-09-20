@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Header from './Header'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { GlobeDemo } from './ui/GridGlobe'
 
@@ -38,7 +38,7 @@ function ContactPage() {
   return (
     <>
       <Header/>
-      {(window.innerWidth > 768) ? <GlobeDemo/> : null}
+      <GlobeDemo/>
       <motion.div className='absolute top-[8rem] xl:left-[15rem] z-10 2xl:left-[25rem]'
         initial={{opacity: 0}}
         animate={{
